@@ -26,3 +26,6 @@ J'ai mis du temps à avoir une version d'ubuntu qui permet de simuler (notamment
 La question 2 m'a pris 2-3 heures. 
 
 J'ai également perdu du temps sur la question 4 , le package https://github.com/ros-perception/ar_track_alvar ne semble pas compatible avec ros melodic malgrès la branche dédiée. le catkin_make sortait en erreur.
+
+
+
