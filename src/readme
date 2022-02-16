@@ -1,0 +1,31 @@
+1ier question: 
+Les commandes à lancer sont : 
+
+$ export TURTLEBOT3_MODEL=burger
+$ roslaunch turtlebot3_gazebo turtlebot3_empty_world.launch
+Celà permet d'obtenir une visualisation gazebo du robot turtlebot
+
+2ième question:
+
+$ rosrun turtlebot3_teleop turtlebot_multiplex 
+$ roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch
+
+La première commande permet de lancer un noeud envoyant des commandes sur 2 topics /cmd_web et /cmd_local.
+La deuxième commande écoute les deux topics et controle les consignes de vitesse et d'orientation 
+
+Pour envoyer une commande, il faut se mettre sur le terminal du noeud turtlebot_multiplex et d'envoyer les commandes suivantes : 
+
+z ou 8 pour avancer , 
+q ou 4 pour tourner à gauche , 
+d ou 6 pour tourner à droite , 
+x ou 2 pour reculer , 
+s ou 5 pour s'arreter
+
+
+J'ai mis du temps à avoir une version d'ubuntu qui permet de simuler (notamment gazebo). Gazebo faisait cracher la VM.
+La question 2 m'a pris 2-3 heures. 
+
+J'ai également perdu du temps sur la question 4 , le package https://github.com/ros-perception/ar_track_alvar ne semble pas compatible avec ros melodic malgrès la branche dédiée. le catkin_make sortait en erreur.
+
+
+
